@@ -1,5 +1,10 @@
+body,html{
+  background-color: black;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 .App {
-  text-align: center;
+  text-align: center; 
 }
 
 .App-logo {
@@ -14,19 +19,16 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: linear-gradient(45deg, rgb(0, 0, 0) 0%, rgb(104, 4, 52) 50%,rgb(0, 0, 0) 100%); 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 2% 0;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +37,281 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+nav{
+  font-size: 24px;
+
+}
+
+nav a, nav a:visited{
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 2%;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 18px;
+  
+}
+.App-header nav a:hover{
+  color: black;
+  transition: all;
+  transition-duration: 1s;
+}
+@keyframes nav-appear {
+  from {
+    font-size: 0px;
+  }
+  to {
+    font-size: 24px;
+  }
+}
+
+.App main.main-container{
+  /* display: grid; */
+  position: relative;
+  /* grid-template-columns: 1fr 4fr 1fr; */
+}
+.App{
+  overflow: hidden;
+}
+
+.main-center{
+  /* border:1px snow solid; */
+  width: 100%;
+}
+.main-left, .main-right{
+  position: relative;
+  background-color: #000;
+}
+.animation-border-verticle{
+  border-left: 2px rgb(128, 0, 62) solid;
+  animation-name: border-animation;
+  animation-duration: 2s;
+  position: absolute;
+  top: 0;
+  right:0px;
+  width: 1px;  
+  height: 100%;
+}
+.animation-border-verticle.left{
+  left: 0;
+}
+
+@keyframes border-animation {
+  from {    
+    height: 0px;
+    border-color: white;
+  }
+  to {
+    height: 100%;
+    border-color: rgb(128, 0, 62);
+  }
+}
+footer > .app-footer{
+  position: relative; 
+  background-color: #000;
+}
+footer span{
+  padding: 10px;
+  display: block;
+  color: white;
+}
+.app-footer{
+  overflow: hidden;
+  display: block;
+  background-color: black;
+  color: #fff;
+}
+.border-b{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  position: absolute;
+  /* position: relative; */
+  z-index: 40;
+}
+.border-b div{
+  position: relative;
+}
+.animation-border-horizontal{
+  /* width: 100%; */
+  padding-right: 100%;
+  position: absolute;
+  right:0;
+  background-color: transparent;
+  min-height: 2px;
+  border-top:2px solid rgb(128, 0, 62);
+  display: none;
+  animation-name: footer-border-left;
+  animation-duration: 2s;
+}
+.right-animation-border{
+  display: none;
+  position: absolute;
+  left:0;
+  background-color: transparent;
+  padding-left: 100%;
+  min-height: 2px;
+  border-top:2px solid rgb(128, 0, 62);
+  animation-name: footer-border-right;
+  animation-duration: 2s;
+}
+
+@keyframes footer-border-left {
+  from {    
+    padding-right: 0%;
+    border-top:2px solid white;
+
+
+  }
+  to {
+    padding-right: 100%;
+    border-top:2px solid rgb(128, 0, 62);
+
+
+  }
+}
+@keyframes footer-border-right {
+  from {    
+    padding-left: 0%;
+    border-top:2px solid white;
+  }
+  to {
+    padding-left: 100%;
+    border-top:2px solid rgb(128, 0, 62);
+  }
+}
+
+.main-wrapper{
+  padding:10px;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-center{
+  background: #000;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* animation: main-center-anima; */
+  animation-duration: 2s;
+  /* grid-gap: 10px; */
+  /* height: 100%; */
+}
+@keyframes main-center-anima {
+  from { 
+    grid-gap: 0px;
+  } to {    
+    /* grid-gap: 10px; */
+    /* height: 100%; */
+  } 
+}
+
+.main-center .box-item:hover{
+  box-shadow: 0px 0px 10px rgb(174, 130, 145);
+  cursor: pointer;
+  transition: all;
+  transition-duration: .3s;
+}
+
+.main-center .box-item{
+  padding: 0%;
+  transition: all;
+  transition-duration: 1;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgb(128, 0, 62) 100%); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;  
+  z-index: 20;
+  margin:  10px;
+  border-radius: 10px;
+}
+@keyframes add-margin {
+  from{margin: 0;}
+  to{margin: 2px;}
+}
+.box-content{
+  display: block;
+  width: 100%;
+  height: 200px;
+  background: rgb(2,0,36);
+  background-color: transparent;
+  animation-duration:1s;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+  .main-center{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .main-center{
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .main-wrapper{
+    width: 90%;
+  }
+  .main-center,.App main.main-container {
+    grid-template-columns: 1fr;  
+  }
+  .animation-border-verticle{
+    display: none;
+  }
+  .main-wrapper{
+    margin: 0 auto;
+  }
+
+  .border-b{
+    display: none;
+  }
+  header{
+    border-bottom:rgb(128, 0, 62) 2px solid;
+  }
+}
+
+.main-center .box-item h2{
+  color: white;
+  text-shadow: 0 0 10px rgb(126, 157, 237);
+  width: 90%;
+  padding: 5% 0;
+  border-radius: 10px;
+}
+
+
+.special-bg{
+  background: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgb(128, 0, 62) 100%); 
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  top:0;
+  left: 0;
+  animation: special-bg 2s;
+  overflow:hidden;
+}
+
+@keyframes special-bg {
+  from {
+    height: 0%;
+  }to{
+    height: 100%;
+  }
+}
+#projectList h2{
+  color: white;
 }
