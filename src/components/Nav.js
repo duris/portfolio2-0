@@ -22,6 +22,9 @@ export default function Nav(props) {
     projectLink.classList.add('active')
     homeLink.classList.remove('active')
   }
+  function goToContact() {
+    
+  }
   return(
     <nav className='bannerNav'>
       <ul>
