@@ -1,7 +1,10 @@
 body,html{
-  background-color: black;
+  background-color: transparent;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-color: #000;
 }
 .App {
   text-align: center; 
@@ -25,8 +28,10 @@ body,html{
   align-items: center;
   font-size: calc(10px + 2vmin);
   padding: 2% 0;
-  position: relative;
+  position: static;
+  top:0;
   height: 6vh;
+  z-index: 30;
 }
 
 
@@ -68,14 +73,12 @@ nav a, nav a:visited{
 }
 
 .App main.main-container{
-  /* display: grid; */
+  background-color: black;
   position: relative;
-  margin: 5% 0;
+  padding: 5% 0;
   /* grid-template-columns: 1fr 4fr 1fr; */
 }
-.App{
-  overflow: hidden;
-}
+
 
 .main-center{
   /* border:1px snow solid; */
@@ -173,14 +176,14 @@ nav a, nav a:visited{
 .main-wrapper{
   padding:10px;
   position: relative;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 .main-center{
   background: #000;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   /* animation: main-center-anima; */
   animation-duration: 2s;
   /* grid-gap: 10px; */
@@ -213,7 +216,7 @@ nav a, nav a:visited{
   justify-content: center;
   flex-direction: column;  
   z-index: 20;
-  margin:  10px;
+  margin:  20px;
   border-radius: 10px;
 }
 @keyframes add-margin {
@@ -223,7 +226,7 @@ nav a, nav a:visited{
 .box-content{
   display: block;
   width: 100%;
-  height: 200px;
+  height: 300px;
   background: rgb(2,0,36);
   background-color: transparent;
   animation-duration:1s;
@@ -272,7 +275,7 @@ nav a, nav a:visited{
 
 .main-center .box-item h2{
   color: white;
-  text-shadow: 0 0 10px rgb(126, 157, 237);
+  
   width: 90%;
   padding: 2% 0;
   border-radius: 10px;
@@ -302,6 +305,7 @@ nav a, nav a:visited{
 #projectList h1{
   color: white;
   font-size: 60px;
+  text-shadow: 0 0 13px rgb(126, 157, 237);
 }
 footer > .app-footer{
   position: relative; 

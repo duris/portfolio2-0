@@ -1,24 +1,59 @@
-/* .introBanner{
-  
-} */
+#bannerImg{
+  position: absolute;
+  top:0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 115vh;
+  z-index: -1;
+}
+#homeTab{
+  z-index: 100;  
+}
+
+.introBanner{
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
 .introBanner h1{
-  color:black;
-  text-shadow: 0 0 14px rgb(135, 102, 128);
-  font-size: 16vh;
+  color:rgb(250, 250, 250);
+  text-shadow: 0 0 20px rgb(126, 157, 237);
+  font-size: 14vh;
   text-align: center;
-  line-height: 50vh;
   user-select: none;
   animation: fade-in 2s;
+  z-index: 40;
+  display: block;
+  padding: 30vh 0 50px;
+  opacity: 1;
+  margin-top: -2vh;
 }
 @keyframes fade-in {
   from{opacity: .3;}
-  to{opacity: 100;}
+  to{opacity: 1;}
 }
 
 .socialIcons{
   position: relative;
-  top:-15vh;
+  width: 100%;
 }
 .socialIcons span{
   margin: 2%;
+}
+
+@media only screen and (max-width: 800px) {
+  .introBanner h1{
+    line-height: 20vh;
+    font-size: 12vh;
+    padding: 10vh 0 50px;
+  }
+  .introBanner{
+    height: 70vh;
+  }
+  .socialIcons{
+    top:-5vh
+  }
+
 }

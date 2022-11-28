@@ -19,7 +19,7 @@ export default function Header(params) {
     <header className="App-header">
       <Nav/>
     </header> 
-    <BorderAnimation p1='a' p2='b'/>  
+    <BorderAnimation p1='1' p2='2'/>  
     </>
   )
 }

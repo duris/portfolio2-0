@@ -11,7 +11,7 @@ export default function ProjectList(props) {
   }
   return(
     <>
-    <BorderAnimation p1='1' p2='2'/>    
+    <BorderAnimation p1='3' p2='4'/>    
       <main className='main-container'> 
         <div className="main-wrapper" id="projectList">
         <h1>Projects</h1>
@@ -55,7 +55,7 @@ export default function ProjectList(props) {
             </div>           
           </div>
       </main>
-      <BorderAnimation p1='3' p2='4'/>
+      <BorderAnimation p1='5' p2='6'/>
     </>
   )
 }
