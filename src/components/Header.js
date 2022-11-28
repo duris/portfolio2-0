@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import BorderAnimation from "./BorderAnimation"
+import Nav from "./Nav"
 export default function Header(params) {
 
  
@@ -16,12 +17,7 @@ export default function Header(params) {
   return(
     <>
     <header className="App-header">
-      <nav>
-        <a href="/">Home</a>
-        <a onClick={goToProjects}>projects</a>
-        <a href="#">blog</a>
-        <a href="#">contact</a>        
-      </nav>     
+      <Nav/>
     </header> 
     <BorderAnimation p1='a' p2='b'/>  
     </>

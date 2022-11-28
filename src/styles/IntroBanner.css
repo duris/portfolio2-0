@@ -1,0 +1,24 @@
+/* .introBanner{
+  
+} */
+.introBanner h1{
+  color:black;
+  text-shadow: 0 0 14px rgb(135, 102, 128);
+  font-size: 16vh;
+  text-align: center;
+  line-height: 50vh;
+  user-select: none;
+  animation: fade-in 2s;
+}
+@keyframes fade-in {
+  from{opacity: .3;}
+  to{opacity: 100;}
+}
+
+.socialIcons{
+  position: relative;
+  top:-15vh;
+}
+.socialIcons span{
+  margin: 2%;
+}

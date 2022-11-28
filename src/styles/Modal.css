@@ -1,0 +1,41 @@
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;  
+  left: 50%;
+  z-index: 100;
+  display: none;
+  height: 75%;  
+  width: 75%;
+  box-shadow:  0 0 50px rgb(79, 72, 72);
+  border-radius: 20px;
+  animation: fade-in  1s;
+}
+.show{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalClose{
+  background-color: gray;
+  padding: 10px;
+  border-radius: 10px;
+}
+#modal h2{
+  color:black;
+  text-shadow: 0 0 14px rgb(135, 102, 128);
+  font-size: 6vh;
+  text-align: center;
+  line-height: 50vh;
+  user-select: none;
+}
+@keyframes fade-in {
+  from{opacity: .6;}
+  to{opacity: 1;}
+}
+@keyframes fade-out {
+  from{opacity: 1;box-shadow: 0 0 50px rgb(79, 72, 72);}
+  to{opacity: 0;box-shadow: 0 0 50px black;}
+}

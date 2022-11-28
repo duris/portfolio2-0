@@ -1,0 +1,17 @@
+
+.bannerNav{
+  position: relative;
+  top:0;
+  font-size: 20px;
+  width: 100%;
+}
+.bannerNav li{
+  display: inline;
+}
+.bannerNav li a {
+  padding: 1%;
+  margin: 1% 1%;
+}
+.active {
+  background-color:rgb(128, 0, 62) ;
+}

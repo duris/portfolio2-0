@@ -1,15 +1,23 @@
 import BorderAnimation from "./BorderAnimation"
+import Modal from "./Modal"
 
 export default function ProjectList(props) {
+
+  function loadModal() {
+    let modal = document.getElementById('modal')
+    modal.style.display = 'flex'
+    modal.style.alignItems = 'center'
+    modal.style.justifyContent = 'center'
+  }
   return(
     <>
-    <BorderAnimation p1='1' p2='2'/>
+    <BorderAnimation p1='1' p2='2'/>    
       <main className='main-container'> 
         <div className="main-wrapper" id="projectList">
-        <h2>Projects</h2>
+        <h1>Projects</h1>
         <div className='main-center'>                   
-                <div className='box-item'>  
-                  <div className='box-content'></div>
+                <div className='box-item' onClick={loadModal}>  
+                  <div className='box-content'></div>                  
                   <h2>PixelPrinted</h2>
                 </div>
                 <div className='box-item'>              
@@ -30,7 +38,7 @@ export default function ProjectList(props) {
                 </div>
                 <div className='box-item'>
                   <div className='box-content'></div>
-                <h2>HandMan</h2>
+                <h2>WeatherTravel</h2>
                 </div>
                 <div className='box-item'>
                   <div className='box-content'></div>

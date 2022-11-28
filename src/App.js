@@ -5,10 +5,12 @@ import ProjectList from './components/ProjectList';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import IntroBanner from './components/IntroBanner';
+import Modal from './components/Modal';
 
 function App() {
   return (
     <div className="App">
+      <Modal/>
       <Header/>                
       <IntroBanner/>                                                     
       <ProjectList />                                                   
