@@ -4,10 +4,13 @@ import Nav from './Nav'
 import { SocialIcon } from 'react-social-icons';
 import ReactDOM from 'react-dom';
 import workImg from '../images/workplace.png'
+import BorderAnimation from './BorderAnimation';
 
 export default function IntroBanner(params) {
   return(
-    <div className='bannerWrap'>
+    <>
+   
+    <div className='bannerWrap' id="homeTab">    
       <img src={workImg} id="bannerImg"></img>
     
       <div className="introBanner" id="homeTab">      
@@ -16,10 +19,13 @@ export default function IntroBanner(params) {
         
         <div className='socialIcons'>
           <span><SocialIcon url="https://github.com/duris" target="_blank" bgColor="#80003e" /></span>
-          <span><SocialIcon url="https://twitter.com/ross_duris" target="_blank" bgColor="#80003e" /></span>
+          {/* <span><SocialIcon url="https://twitter.com/ross_duris" target="_blank" bgColor="#80003e" /></span> */}
           <span><SocialIcon url="https://www.linkedin.com/in/rduris/" target="_blank" bgColor="#80003e" /></span>        
+          <span><SocialIcon url="https://rossduris.medium.com/" target="_blank" bgColor="#80003e" /></span>        
+          <span><SocialIcon url="mailto:ross@duris.dev" target="_blank" bgColor="#80003e" /></span>        
         </div>
       </div>
     </div>
+    </>
   )
 }

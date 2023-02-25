@@ -10,12 +10,16 @@ export default function BorderAnimation(props) {
   useEffect(() => {
     const element = document.getElementById(`b-h${props.p1}`);
     const element2 = document.getElementById(`b-h${props.p2}`);
+    const bars = document.getElementsByClassName('border-b')
 
 
     if(props.p1<3){
       const timer = setTimeout(() => {
         element.style.display = 'block'
         element2.style.display = 'block'
+
+        bars[0].classList.add('topOne')
+        
       }, 0);
     } else {
       const timer = setTimeout(() => {

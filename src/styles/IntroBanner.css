@@ -7,14 +7,12 @@
   height: 115vh;
   z-index: -1;
 }
-#homeTab{
-  z-index: 100;  
-}
 
 .introBanner{
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 100vh;
+  z-index: 100;  
 }
 
 .introBanner h1{
@@ -40,7 +38,12 @@
   width: 100%;
 }
 .socialIcons span{
-  margin: 2%;
+  margin: 1.2%;
+}
+.socialIcons span:hover{
+  opacity: .6;
+  transition: all;
+  transition-duration: 1s;
 }
 
 @media only screen and (max-width: 800px) {
@@ -56,4 +59,7 @@
     top:-5vh
   }
 
+}
+.topBorder{
+  top:2vh;
 }

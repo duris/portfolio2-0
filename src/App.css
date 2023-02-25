@@ -27,10 +27,10 @@ body{
   justify-content: center;
   align-items: center;
   font-size: calc(10px + 2vmin);
-  padding: 2% 0;
+  padding: 1.5% 0;
   position: static;
   top:0;
-  height: 6vh;
+  height: 1vh;
   z-index: 30;
 }
 
@@ -49,11 +49,11 @@ nav{
 
 }
 
-nav a, nav a:visited{
+.App-header nav li a, .App-header nav li a:visited{
   color: white;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 0 2%;
+  padding: .5% 1%;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 18px;
   
@@ -235,29 +235,29 @@ nav a, nav a:visited{
 
 
 @media only screen and (max-width: 1200px) {
-  .main-center{
+  /* .main-center{
     
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-  }
+  } */
 }
 
 
 @media only screen and (max-width: 1000px) {
-  .main-center{
+  /* .main-center{
   
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
+  } */
 }
 
 @media only screen and (max-width: 800px) {
   .main-wrapper{
     width: 90%;    
   }
-  .main-center,.App main.main-container {
+  /* .main-center,.App main.main-container {
     grid-template-columns: 1fr;  
-  }
+  } */
   .animation-border-verticle{
     display: none;
   }
@@ -306,6 +306,7 @@ nav a, nav a:visited{
   color: white;
   font-size: 60px;
   text-shadow: 0 0 13px rgb(126, 157, 237);
+  padding: 6% 0 0;
 }
 footer > .app-footer{
   position: relative; 
@@ -322,4 +323,16 @@ footer span{
   display: block;
   background-color: black;
   color: #fff;
+}
+
+.App-header{
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.topOne{
+  position: absolute;
+  bottom: 0px;
+  z-index: 30;
 }

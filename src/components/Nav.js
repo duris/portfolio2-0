@@ -29,7 +29,7 @@ export default function Nav(props) {
     <nav className='bannerNav'>
       <ul>
         <li><a onClick={goToHome}  className='active' id="home-tab" href="#home">Home</a></li>
-        <li><a onClick={goToProjects} id="project-tab" href="#products">Projects</a></li>
+        <li><a onClick={goToProjects} id="project-tab" href="#projects">Projects</a></li>
         <li><a href="#contact" id="contact-tab">Contact</a></li>
       </ul>
     </nav>
